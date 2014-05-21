@@ -1,0 +1,137 @@
+\documentclass{beamer}
+
+\usetheme[secheader]{Boadilla}
+\usecolortheme{beaver}
+\usepackage[spanish]{babel}
+\usepackage{ragged2e}
+\usepackage{commath}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xfrac}
+\usepackage{gensymb}
+\usepackage{multirow}
+
+\def\mca#1{\multicolumn{1}{c}{#1}}
+\def\mcb#1{\multicolumn{1}{c|}{#1}}
+
+%Definicion del color de los bloques que contienen texto
+\setbeamercolor{block title}{bg=gray!60,fg=black}
+%IGNORAR - Template de la portada
+\defbeamertemplate*{title page}{Cony}
+{
+	\vspace{-8ex}
+	\hspace{-3ex}
+	% Header UC, versión IEE
+	\hbox
+	{
+		\raisebox{-18pt}{\includegraphics[scale=0.65]{logo.pdf}}
+		\vbox
+		{
+			\hbox{\small \insertinstitute} 
+			\hbox{\small \college}
+			\hbox{\small \department}
+		}	
+	}
+  \vspace{5ex}
+  \begin{block}{}
+  \center{
+    \usebeamercolor[fg]{title}\usebeamerfont{title}\inserttitle\par
+    \usebeamercolor[fg]{subtitle}\usebeamerfont{subtitle}\insertsubtitle
+    }
+  \end{block}
+  \ifx\insertauthor\@empty
+  \else
+    \center{\usebeamercolor[fg]{author}\usebeamerfont{author}\insertauthor\par}
+  \fi
+  \ifx\insertdate\@empty
+  \else
+   \center{\usebeamercolor[fg]{date}\usebeamerfont{date}\insertdate\par}
+  \fi
+}
+%DEJAR DE IGNORAR
+
+\title{IEE3664 Control Inteligente}
+\subtitle{Tarea 6}
+%El string entre brackets se incluye en el pie de página, el resto en la portada.
+\author[C. Villanueva - R. Gonz\'alez]{Constanza Villanueva - Rodrigo Gonz\'alez}
+\date{Mayo 23, 2014}
+%Rellenar el espacio entre brackets para incluir información junto al nombre
+%del autor en los pies de página.
+\institute[]{Pontificia Universidad Cat\'olica de Chile}
+\def\college{Escuela de Ingenier\'ia}
+\def\department{Departamento de Ingenier\'ia El\'ectrica}
+
+%La siguiente línea elimina los símbolos de navegación que aparecen
+%en la zona inferior derecha del documento. Queda mejor para una
+%presentación pero puede ser útil para una clase.
+\setbeamertemplate{navigation symbols}{}
+
+%Color y estilo de viñetas
+\setbeamertemplate{itemize item}{\color{red!70!black}$\bullet$}
+\setbeamertemplate{itemize subitem}{\color{red!70!black}$\blacktriangleright$} 
+%También se puede usar \circ u otros símbolos
+\setbeamercolor{enumerate item}{fg=red!70!black}
+\setbeamercolor{enumerate subitem}{fg=red!70!black}
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{enumerate subitems}[default]
+
+% Para poner subindices en text
+\usepackage{fixltx2e} %cargar este paquete y usar el comando a\textsubscript{b}
+\usepackage{hyperref} %para hipervinculos
+
+%INICIO DEL PPT
+\begin{document}
+
+%Portada
+\frame{\titlepage}
+
+%Tabla de contenidos
+%\section[Contenidos]{}
+%\frame{\tableofcontents}
+
+\section{19th IFAC World Congress 2014}
+\subsection{Predicci\'on de Eventos de Contaminaci\'on Ambiental}
+\frame {
+	\frametitle{Introducci\'on}
+	La International Federation of Automatic Control organiza, cada 3 a\~nos, un festival de no\~nos.
+}
+
+%PREGUNTA 1
+\frame {
+	\frametitle{Avances en Control Autom\'atico}
+}
+
+%PREGUNTA 2
+\frame {
+	\frametitle{Avances en Control Inteligente}
+	\begin{itemize}
+	\item \textbf{Sistemas Expertos:}
+	\item \textbf{Sistemas Difusos:}
+	\item \textbf{Redes Neuronales:}
+	\item \textbf{Algoritmos Gen\'eticos:}
+	\item \textbf{Sistemas Multiagentes:}
+	\item \textbf{Detecci\'on y Diagn\'ostico de Fallas:}
+	\item \textbf{Aplicaciones:}
+	\end{itemize}
+}
+
+%PREGUNTA 3a
+\frame {
+	\frametitle{Tema 1: Control Experto de Inodoro Interestelar con Arom\'atico Difuso}
+}
+
+%PREGUNTA 3b
+\frame {
+	\frametitle{Tema 2: Algoritmo Gen\'etico para Nacimiento Neuronal de Pollitos}
+}
+
+%PREGUNTA 4
+\frame {
+	\frametitle{Conclusiones}
+	\begin{itemize}
+	\item \textbf{En lo cient\'ifico:}
+	\item \textbf{En lo industrial:}
+	\end{itemize}
+}
+
+\end{document}

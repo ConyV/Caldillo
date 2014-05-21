@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{19th IFAC World Congress 2014}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Predicci\'on de Eventos de Contaminaci\'on Ambiental}{2}{0}{1}
